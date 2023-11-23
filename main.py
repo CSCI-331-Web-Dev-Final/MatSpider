@@ -1,4 +1,6 @@
 #Web Dev Django Class project- Forrest Gile, Ryan Dreyer
+import matplotlib.pyplot as plt
+
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
