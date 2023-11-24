@@ -7,7 +7,7 @@ INSTALLATION INSTRUCTIONS:
 2: Setup git upstream access
 3: Setup python virtual enviroment
     3.1: Django
-        run "pip install Djangop" in terminal
+        run "pip install Django" in terminal
     3.2: Matplotlib
         Run "pip install Matplotlib" in terminal
     3.3: ________   
@@ -15,9 +15,14 @@ INSTALLATION INSTRUCTIONS:
 RUNTIME INSTRUCTIONS:
     
 1:Starting the Django Server 
+    Change to project directory located next to "manage.py" and run 
+    "python manage.py runserver 8000>" in terminal
+    this starts the development server  
 2:Linking to Source code
 
 ----------------------
 
 ---LOG---
-11/22: Linked venv path to github (Forrest), Expanded README OUTLINE
+11/22: Linked venv path to github (GoblinTrees), Expanded README OUTLINE
+11/23: Added Django resources and runserver
+11/24: Created plotr app file, after running server visit "localhost 8000/MatSpider/"
