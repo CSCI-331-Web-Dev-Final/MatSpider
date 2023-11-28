@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +16,10 @@
     </form>
 
     <!-- Display Matplotlib Graph -->
-    {% comment %} {% if image_data %}
-        <img src="data:image/png;base64,{{ image_base64 }}" alt="Matplotlib Plot">
-    {% endif %} {% endcomment %}
-
-    <img src="data:image/png;base64,{{ image_base64 }}" alt="Matplotlib Plot">
+    
+    
+    <img src="{% static 'images/your_plot.png' %}" alt="Matplotlib Plot">
+    <img src="{% static 'much_wow.jpg' %}">
 
     
 </body>
