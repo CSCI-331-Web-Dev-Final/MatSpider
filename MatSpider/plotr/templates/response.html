@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" style="background: blue">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response site</title>
+</head>
+<body style="background: darkgray">
+    <h1>Response Site</h1>
+    <form action="response.html" method="get">
+        <input type="text" name="databar" value="">
+        <input type="submit" value="Submit">
+    </form>
+    <div id="results">
+       <p> Data:
+           {{data}}
+           <!---
+           {% for x in d%}
+           <li>{{x}}</li>
+           {%endfor%}
+           --->
+
+       </p>
+
+    </div>
+</body>
+</html>
