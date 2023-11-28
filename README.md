@@ -27,6 +27,9 @@ RUNTIME INSTRUCTIONS:
 11/22: Linked venv path to github (GoblinTrees), Expanded README OUTLINE
 11/23: Added Django resources and runserver
 11/24: Created plotr app file, after running server visit "localhost 8000/MatSpider/"
+
+
+
 (Ryan Dreyer)
 11/25: created and index html file running on server visit "http://127.0.0.1:8000/" (note dont know why it was so hard to build up) 
 ```
