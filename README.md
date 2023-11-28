@@ -29,3 +29,4 @@ RUNTIME INSTRUCTIONS:
 11/24: Created plotr app file, after running server visit "localhost 8000/MatSpider/"
 (Ryan Dreyer)
 11/25: created and index html file running on server visit "http://127.0.0.1:8000/" (note dont know why it was so hard to build up)
+11:27: pushing to Git
