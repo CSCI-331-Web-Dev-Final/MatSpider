@@ -142,9 +142,12 @@ index.html
     <h1>Test Site</h1>
     
     <input type="text">
-    <a href ="{% url 'response' %}"><button>Submit</button></a>
-
-    {% comment %} <img src="{{ url_for('image', filename='plot.png') }}" alt="Matplotlib Plot"> {% endcomment %}
+    <form action="{% url 'response' %}" method="post">
+        {% csrf_token %}
+        <label for="input_data">Enter Data:</label>
+        <input type="text" id="input_data" name="input_data" required>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
 ```
