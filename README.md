@@ -119,3 +119,5 @@ index.html
 </body>
 </html>
 ```
+11/28:
+got an image to appear will move on to moving matlip grapghs to image folder
