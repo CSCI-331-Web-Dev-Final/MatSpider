@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" style="background: blue">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Response site</title>
@@ -8,20 +9,29 @@
 <body style="background: darkgray">
     <h1>Response Site</h1>
     <form action="response.html" method="get">
-        <input type="text" name="databar" value="">
+        <input type="text" name="databar" value= "{{data}}" style="width: 450px; background: black; color: lightblue">
         <input type="submit" value="Submit">
     </form>
     <div id="results">
-       <p> Data:
-           {{data}}
-           <!---
+        {% load static %}
+           <img src="../static/images/data.png" alt="Matplotlib Plot Image" >
+           <!--- debugging artifact
            {% for x in d%}
            <li>{{x}}</li>
            {%endfor%}
            --->
+    </div>
 
-       </p>
-
+<div id="instructions">
+        <p> Input Format</p>
+        <a href="https://docs.sympy.org/latest/modules/plotting.html#sympy.plotting.plot.plot">Link</a>
+        <li>plot(expr, range, **kwargs)</li>
+        <p>Plotting a single expression with the default range (-10, 10).</p>
+        <li>plot(expr, **kwargs)</li>
+         <p>Plotting multiple expressions with a single range.</p>
+        <li>plot(expr1, expr2, ..., range, **kwargs)</li>
+        <p>Plotting multiple expressions with multiple ranges.</p>
+        <li>plot((expr1, range1), (expr2, range2), ..., **kwargs)</li>
     </div>
 </body>
 </html>
