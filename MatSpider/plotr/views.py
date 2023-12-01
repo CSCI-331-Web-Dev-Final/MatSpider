@@ -4,6 +4,7 @@ from django import forms
 from django.views.decorators.csrf import csrf_exempt
 from sympy.parsing.sympy_parser import parse_expr
 from sympy.plotting import plot
+import random
 
 
 #getPlot takes in the data from the form data and parses it for symbolic values
@@ -15,7 +16,11 @@ def getPlot(s):
     func = parse_expr(s)
     p1 = plot(func, show=False)
     #print(type(p1)) #Debugging
-    p1.save('plotr/static/images/data.png')
+    unq_str = str(random.randint(1,1000000))
+    save_string = "plotr/static/images/data"
+    save_string += unq_str
+    save_string +=".png"
+    p1.save(save_string)
     #p1.show()   #show to the coder for debug - order matters, save first then show (see matplotlib doc)
     #ERR: the above debug is depreciated- better method is plot(func, show=True) above - the above throws errors
 
