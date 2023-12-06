@@ -121,3 +121,5 @@ index.html
 ```
 11/28:
 got an image to appear will move on to moving matlip grapghs to image folder
+
+12/4: fixed program so there is only one pic in the static/images folder when running the program. if a user puts in diffrent data the pic will overwrite and dispplay current data that user put in.
