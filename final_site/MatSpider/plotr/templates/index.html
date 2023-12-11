@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" style="background: yellowgreen; align-content: center; margin: auto; padding: 2em;
+display: flex; flex-direction: column" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test site</title>
+</head>
+<body style="background: darkgray">
+    <h1>Test Site</h1>
+    <!-- DEBUGGIN: this response.html is not linking to the correct file ->
+    <!-https://stackoverflow.com/questions/39006956/django-url-not-found-upon-submitting-form -->
+
+    <div id="instructions" style="align-content: center;
+display: flex; flex-direction: column" >
+        <a href="https://docs.sympy.org/latest/modules/plotting.html#sympy.plotting.plot.plot">Link to Symy plot docs</a>
+        <p> Input Format</p>
+        <li>plot(expr, range, **kwargs)</li>
+        <p>Plotting a single expression with the default range (-10, 10).</p>
+        <li>plot(expr, **kwargs)</li>
+         <p>Plotting multiple expressions with a single range.</p>
+        <li>plot(expr1, expr2, ..., range, **kwargs)</li>
+        <p>Plotting multiple expressions with multiple ranges.</p>
+        <li>plot((expr1, range1), (expr2, range2), ..., **kwargs)</li>
+    </div>
+    <p style="font-style: italic">Enter symbolic polynomial of variable x in input below</p>
+    <form action="response.html" method="get">
+       <!-- {% csrf_token %} #removed to  "2*x**3*cos(x)-7*x +2.7182818**(x/5)"-->
+        {{form}}
+        <input type="text" name="databar" value="" style="width: 450px; background: black; color: lightblue">
+        <input type="submit" value="Submit">
+        <div>
+	  		{{form.name}}
+		</div>
+    </form>
+    <div id="results">
+
+    </div>
+</body>
+</html>
